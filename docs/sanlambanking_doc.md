@@ -29,7 +29,7 @@ The core business capability -- debit an account and publish a withdrawal event 
 
 ---
 
-## 5. Unclear Library Usages Clarified
+## 3. Unclear Library Usages Clarified
 
 | Library/Tool     | Purpose                                 |
 |------------------|------------------------------------------|
