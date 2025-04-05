@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: sanlambanking
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sanlam_bank
+    username: pnonyusa
+    password: test@1234
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update  # Use "update", "validate", or "none" depending on your needs
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+aws:
+  sns:
+    region: af-south-1
+
+# Uncomment the following block to use H2 in-memory database instead of PostgreSQL
+# spring:
+#   datasource:
+#     url: jdbc:h2:mem:sanlam_bank;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+#     driver-class-name: org.h2.Driver
+#     username: pnonyusa
+#     password: test@1234
+#     initialization-mode: always
+#   jpa:
+#     database-platform: org.hibernate.dialect.H2Dialect
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
+#     properties:
+#       hibernate:
+#         format_sql: true
