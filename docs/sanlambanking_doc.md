@@ -4,7 +4,7 @@
 
 This refactor improves a basic banking withdrawal operation by:
 
-- Separating concerns into Controller, Service, Repository, and Publisher layers.
+- Separating concerns into Controller, Service, Repository,Configuration and Publisher layers.
 - Adding transaction management, logging, and exception handling.
 - Introducing a loosely coupled event publishing mechanism via AWS SNS.
 - Ensuring testability, auditability, and maintainability.
