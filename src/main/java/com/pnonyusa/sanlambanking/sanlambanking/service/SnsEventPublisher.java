@@ -24,7 +24,7 @@ public class SnsEventPublisher implements EventPublisher{
 
     private static final Logger logger = LoggerFactory.getLogger(SnsEventPublisher.class);
     private final SnsClient snsClient;
-    private final String topicArn = "arn:aws:sns:af-south-1:PNONYUSA_TEST_ID:SANLAM_BANK_TOPIC";
+    private final String topicArn;
 
 
     @Override

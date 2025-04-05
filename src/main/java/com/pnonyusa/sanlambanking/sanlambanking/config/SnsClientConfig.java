@@ -20,10 +20,21 @@ import org.springframework.context.annotation.Configuration;
 public class SnsClientConfig {
 
     private final AwsSnsProperties snsProperties;
+
     @Bean
     public SnsClient snsClient() {
         return SnsClient.builder()
                 .region(Region.of(snsProperties.getRegion()))
                 .build();
+    }
+
+    /**
+     * Retrieves the SNS topic ARN.
+     *
+     * @return the ARN for the SNS topic
+     */
+    @Bean
+    public String snsTopicArn() {
+        return snsProperties.getTopicArn();
     }
 }

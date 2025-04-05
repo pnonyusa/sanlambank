@@ -15,4 +15,5 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "aws.sns")
 public class AwsSnsProperties {
     private String region;
+    private String topicArn;
 }
