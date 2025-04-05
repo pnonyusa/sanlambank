@@ -16,10 +16,10 @@ The core business capability -- debit an account and publish a withdrawal event 
 
 ## 2. Implementation Highlights
 
-| Area             | Improvements Made                                                              |
+| Area             | Improvements Made                                                               |
 |------------------|---------------------------------------------------------------------------------|
-| Architecture     | Layered structure (Controller -> Service -> Repo/EventPublisher)               |
-| Fault Tolerance  | Exception handling for DB access, insufficient funds, SNS failures             |
+| Architecture     | Layered structure (Configuration->Controller -> Service -> Repo/EventPublisher) |
+| Fault Tolerance  | Exception handling for DB access, insufficient funds, SNS failures              |
 | Data Integrity   | Ensured atomic updates via @Transactional                                       |
 | Observability    | Introduced structured logging via SLF4J                                         |
 | Maintainability  | Domain-specific exceptions, POJOs, and interface-driven components              |
